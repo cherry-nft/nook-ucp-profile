@@ -4,7 +4,21 @@
     "services": {
       "dev.ucp.shopping": []
     },
-    "payment_handlers": [],
+    "payment_handlers": {
+      "dev.nook.virtual-card": [
+        {
+          "id": "nook_single_use_card",
+          "version": "2026-08-25",
+          "spec": "https://github.com/cherry-nft/nook-ucp-profile",
+          "schema": "https://github.com/cherry-nft/nook-ucp-profile",
+          "available_instruments": [
+            {
+              "type": "card"
+            }
+          ]
+        }
+      ]
+    },
     "capabilities": {
       "dev.ucp.shopping.cart": [
         {
